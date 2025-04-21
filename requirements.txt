@@ -2,7 +2,7 @@
 click
 colorama
 flask_mail
-Flask=
+Flask
 itsdangerous
 Jinja2
 MarkupSafe
