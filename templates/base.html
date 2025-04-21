@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANJEEVI CONSTRUCTION</title>
+
+    <!--=====FAB ICON=======-->
+    <link rel="shortcut icon" href="../static/assets/img/logo/title5.png" type="image/x-icon">
+
+    <!--=====CSS=======-->
+    <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../static/assets/css/nice-select.css">
+    <link rel="stylesheet" href="../static/assets/css/slick-slider.css">
+    <link rel="stylesheet" href="../static/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="../static/assets/css/aos.css">
+    <link rel="stylesheet" href="../static/assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="../static/assets/css/main.css">
+
+    <style>
+    .martex-container {
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .martex-packages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .martex-package {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .martex-package-header {
+      background-color: #003980;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .martex-price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .martex-accordion {
+      width: 100%;
+    }
+
+    .martex-accordion-item {
+      border-top: 1px solid #ddd;
+    }
+
+    .martex-accordion-button {
+      background: none;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .martex-accordion-button::after {
+      content: '+';
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .martex-accordion-content {
+      background-color: #a9c6f5;
+      display: none;
+      padding: 10px;
+      font-size: 14px;
+      color: #000;
+      text-align: left;
+    }
+
+    .martex-btn {
+      background-color: #003980;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .martex-package {
+        width: 90%;
+      }
+    }
+
+
+    /*Start Why*/
+        .construction-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .construction-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .construction-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .construction-box {
+            font-size: 18px;
+            font-weight: bold;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+        }
+        .construction-small-text {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .construction-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .construction-btn {
+            background: #003980;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            flex: 1 1 250px;
+            text-align: center;
+            min-width: 200px;
+        }
+        .construction-btn:hover {
+            background: #29486e;
+        }
+        /*End Why*/
+
+        /*Start Gallery*/
+        .gallery-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        /*End Gallery*/
+
+        .popup-overlay {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999999;
+        }
+        .popup-box {
+            background: white;
+            max-width: 600px;
+            width: 90%;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            z-index: 99999999;
+        }
+        .close-btn {
+          position: absolute;
+          top: 25px;
+          right: 27px;
+          font-size: 35px;
+          cursor: pointer;
+          color: white;
+        }
+        .popup-header {
+            width: 100%;
+            background: #00397f;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .popup-content {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            align-items: center;
+        }
+        .form-container {
+            width: 50%;
+            padding: 20px;
+        }
+        .info-container {
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            width: 100%;
+            background: #00397f;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        @media (max-width: 992px) {
+          .popup-content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+            .popup-box {
+                flex-direction: column;
+            }
+            .form-container, .info-container {
+                width: 100%;
+            }
+        }
+  </style>
+
+    <!--=====JQUERY=======-->
+    <script src="../static/assets/js/jquery-3-7-1.min.js"></script>
+  </head>
+
+  <body class="body tg-heading-subheading animation-style3"
+    onload="openPopup()">
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <div class="popup-header">GET A FREE QUOTE !!</div>
+        <div class="popup-content">
+          <div class="form-container">
+            <div class="form-group">
+              <label>Name *</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+              <label>Mobile Number *</label>
+              <input type="text" placeholder="Enter mobile number">
+            </div>
+            <div class="form-group">
+              <label>Email ID *</label>
+              <input type="email" placeholder="Enter your Email ID">
+            </div>
+            <div class="form-group">
+              <label>City *</label>
+              <select>
+                <option value="chennai">Chennai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="hyderabad">Hyderabad</option>
+              </select>
+            </div>
+            <button class="submit-btn">GET FREE QUOTE</button>
+          </div>
+          <div class="info-container">
+            <h3>SANJEEVI <br><strong>CONSTRUCTION</strong> IN <span
+                style="color:#00397f;">INDIA</span></h3>
+            <p>SINCE - 1985</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--=====progress END=======-->
+
+    <div class="paginacontainer">
+
+      <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%"
+          viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+
+    </div>
+
+    <!--=====progress END=======-->
+
+    <!--=====HEADER START=======-->
+
+    <header>
+      <div class="header-area header-area6 header-area-all d-none d-lg-block"
+        id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="header-elements">
+                <div class="site-logo">
+                  <a href="index.html">
+                    <img src="../static/assets/img/logo/sanjavee-constrution-logo.png"
+                      alt>
+                  </a>
+                </div>
+
+                <div class="main-menu-ex main-menu-ex1">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a class="list-group-item list-group-item-action"
+                        href="#about">About Us</a></li>
+                    <li><a class="list-group-item list-group-item-action"
+                        href="#works">Our Works</a></li>
+                    <li><a class="list-group-item list-group-item-action"
+                        href="#package">Construction Package</a></li>
+                    <li><a class="list-group-item list-group-item-action"
+                        href="https://space3architects.com/"
+                        target="_blank">Interior</a></li>
+                    <li><a class="list-group-item list-group-item-action"
+                        href="#faq">FAQ</a></li>
+                    
+
+                  </ul>
+                </div>
+
+                <div class="header1-buttons">
+                  <div class="button">
+                    <a class="theme-btn10" href="#contact">Contact Us <span
+                        class="arrow1"><i
+                          class="fa-solid fa-arrow-right"></i></span><span
+                        class="arrow2"><i
+                          class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--=====HEADER END=======-->
+
+    <!--=====Mobile header start=======-->
+    <div class="mobile-header d-block d-lg-none ">
+      <div class="container-fluid">
+        <div class="col-12">
+          <div class="mobile-header-elements">
+            <div class="mobile-logo">
+              <a href="#"><img
+                  src="../static/assets/img/logo/sanjavee-constrution-logo.png" alt></a>
+            </div>
+            <div class="mobile-nav-icon">
+              <i class="fa-duotone fa-bars-staggered"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-sidebar d-block d-lg-none">
+      <div class="logo-m">
+        <a href="#"><img src="../static/assets/img/logo/sanjavee-constrution-logo.png" alt
+            style="border-radius: 10px;"></a>
+      </div>
+      <div class="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="mobile-nav">
+
+        <ul>
+          <li><a href="#">Home </a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#works">Our Works</a></li>
+          <li><a href="#package">Construction Package</a></li>
+          <li><a href="https://space3architects.com/"
+              target="_blank">Interior</a></li>
+          <li><a href="#faq">FAQ</a> </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <div class="single-footer-items">
+          <h3>Contact Us</h3>
+
+          <div class="contact-box">
+            <div class="icon">
+              <img src="../static/assets/img/icons/footer1-icon1.png" alt>
+            </div>
+            <div class="pera">
+              <a href="tel:+9198410 17077">+91 98410 17077</a>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <div class="icon">
+              <img src="../static/assets/img/icons/footer1-icon2.png" alt>
+            </div>
+            <div class="pera">
+              <a href="tel:+918525000003">+91 85250 00003</a>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <div class="icon">
+              <img src="../static/assets/img/icons/footer1-icon3.png" alt>
+            </div>
+            <div class="pera">
+              <a
+                href="mailto:hemnath.sanjeevi@gmail.com">hemnath.sanjeevi@gmail.com</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-infos">
+          <h3>Our Location</h3>
+          <ul class="social-icon">
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!--=====Mobile header end=======-->
+
+
+    {% block content %}
+    {% endblock%}
+    
+          <!--===== FOOTER AREA START =======-->
+
+          <div class="footer5 _relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="single-footer-items footer-logo-area">
+                <div class="footer-logo">
+                  <a href="#"><img
+                      src="../static/assets/img/logo/sanjavee-constrution-logo.png"
+                      alt></a>
+                </div>
+                <div class="space20"></div>
+                <div class="heading1">
+                  <p style="text-align: justify;">Sanjeevi Constructions – Top
+                    Construction Company & Builders in Chennai, Puzhal 35+ Years
+                    of Excellence | 800+ Completed Projects | Trusted by
+                    Thousands. Sanjeevi Constructions is a leading construction
+                    company in Chennai, Puzhal, specializing in residential,
+                    commercial, and industrial projects.
+                  </p>
+                </div>
+                <ul class="social-icon">
+                  <li>
+                    <a href="https://www.instagram.com/sanjeeviconstructions" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://www.instagram.com/sanjeeviconstructions" target="_blank">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+                  
+                  <li><a href="https://www.instagram.com/space3architects" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="single-footer-items">
+                <h3 style="color: #00397f;">Quick Links</h3>
+
+                <ul class="menu-list">
+                  <li><a href="#about">About Us </a></li>
+                  <li><a href="#works">Our Works</a></li>
+                  <li><a href="#package">Construction Package</a></li>
+                  <li><a href="https://space3architects.com/" target="_blank">Interior</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="single-footer-items">
+                <h3 style="color: #00397f;">Contact Us</h3>
+
+                <div class="contact-box">
+                  <div class="icon">
+                    <img src="../static/assets/img/icons/footer1-icon1.png" alt>
+                  </div>
+                  <div class="pera">
+                    <a href="tel:+91 85250 00003">+91 85250 00003</a>
+                  </div>
+                </div>
+
+                <div class="contact-box">
+                  <div class="icon">
+                    <img src="../static/assets/img/icons/footer1-icon1.png" alt>
+                  </div>
+                  <div class="pera">
+                    <a href="tel:+91 95516 57222">+91 95516 57222</a>
+                  </div>
+                </div>
+
+                <div class="contact-box">
+                  <div class="icon">
+                    <img src="../static/assets/img/icons/footer1-icon3.png" alt>
+                  </div>
+                  <div class="pera">
+                    <a
+                      href="mailto:hemnath.sanjeevi@gmail.com">hemnath.sanjeevi@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="space40"></div>
+        </div>
+
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-12 text-center">
+                <div class="coppyright">
+                  <p>&copy; Sanjeevi Constructions. All rights reserved. Designed and developed by 
+                    <a href="https://martxai.tech" target="_blank">MarteX Software Enterprises</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--===== FOOTER AREA END =======-->
+
+      <script src="../static/assets/js/bootstrap.min.js"></script>
+      <script src="../static/assets/js/aos.js"></script>
+      <script src="../static/assets/js/fontawesome.js"></script>
+      <script src="../static/assets/js/jquery.countup.js"></script>
+      <script src="../static/assets/js/mobile-menu.js"></script>
+      <script src="../static/assets/js/jquery.magnific-popup.js"></script>
+      <script src="../static/assets/js/owl.carousel.min.js"></script>
+      <script src="../static/assets/js/slick-slider.js"></script>
+      <script src="../static/assets/js/gsap.min.js"></script>
+      <script src="../static/assets/js/ScrollTrigger.min.js"></script>
+      <script src="../static/assets/js/Splitetext.js"></script>
+      <script src="../static/assets/js/text-animation.js"></script>
+      <script src="../static/assets/js/swiper-bundle.js"></script>
+      <script src="../static/assets/js/SmoothScroll.js"></script>
+      <script src="../static/assets/js/jquery.lineProgressbar.js"></script>
+      <script src="../static/assets/js/ripple-btn.js"></script>
+      <script src="../static/assets/js/main.js"></script>
+
+      <script>
+          document.querySelectorAll('.martex-accordion-button').forEach(button => {
+          button.addEventListener('click', () => {
+            const sectionTitle = button.textContent.trim(); // get clicked section title
+            const isOpen = button.nextElementSibling.style.display === 'block';
+
+            // Close all sections first
+            document.querySelectorAll('.martex-accordion-content').forEach(content => {
+              content.style.display = 'none';
+            });
+
+            // If not open, open all matching section titles in all boxes
+            if (!isOpen) {
+              document.querySelectorAll('.martex-accordion-button').forEach(btn => {
+                if (btn.textContent.trim() === sectionTitle) {
+                  btn.nextElementSibling.style.display = 'block';
+                }
+              });
+            }
+          });
+        });
+      </script>  
+  <script>
+    function openPopup() {
+        document.getElementById('popup').style.display = 'flex';
+    }
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+  </body>
+</html>
