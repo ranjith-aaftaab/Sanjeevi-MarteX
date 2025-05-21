@@ -112,7 +112,7 @@
                                     class="fa-solid fa-arrow-right"></i></span><span
                                   class="arrow2"><i
                                     class="fa-solid fa-arrow-right"></i></span></a>
-                              <a class="theme-btn11" href="#works">Our Works<span
+                              <a class="theme-btn11" href="works">Our Works<span
                                   class="arrow1"><i
                                     class="fa-solid fa-arrow-right"></i></span><span
                                   class="arrow2"><i
@@ -218,8 +218,9 @@
           </div>
         </div>
   
-        <div class="about6 sp" id="package">
-          <div class="martex container">
+        <center>
+          <div class="about6 sp" id="package">
+          <div class="martex">
             <div class="row">
               <div class="col-lg-6 m-auto text-center">
                 <div class="heading6">
@@ -807,6 +808,7 @@
             </div>
           </div>
         </div>
+        </center>
   
         <!--=====ABOUT AREA END=======-->
   
@@ -839,7 +841,53 @@
         </div>
   
         <div class="service6 sp bg5" id="service">
-          <div class="gallery-container">
+              <div class="gallery-container">
+    <div class="gallery-title">OUR WORKS</div>
+    <div class="pr-gallery">
+      <div class="pr-blog-card">
+        <div class="pr-blog-card__image">
+          <img src="../static/assets/img/gallery/gallery1.png" alt="1" onclick="openModal(0)">
+        </div>
+      </div>
+      <div class="pr-blog-card">
+        <div class="pr-blog-card__image">
+          <img src="../static/assets/img/gallery/gallery2.png" alt="2" onclick="openModal(1)">
+        </div>
+      </div>
+      <div class="pr-blog-card">
+        <div class="pr-blog-card__image">
+          <img src="../static/assets/img/gallery/gallery3.png" alt="3" onclick="openModal(2)">
+        </div>
+      </div>
+      <div class="pr-blog-card">
+        <div class="pr-blog-card__image">
+          <img src="../static/assets/img/gallery/gallery4.png" alt="4" onclick="openModal(3)">
+        </div>
+      </div>
+      <div class="pr-blog-card">
+        <div class="pr-blog-card__image">
+          <img src="../static/assets/img/gallery/gallery5.png" alt="5" onclick="openModal(4)">
+        </div>
+      </div>
+      <div class="pr-blog-card">
+        <div class="pr-blog-card__image">
+          <img src="../static/assets/img/gallery/gallery6.png" alt="6" onclick="openModal(5)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="pr-modal" class="pr-modal">
+    <span class="pr-close" onclick="closeModal()">&times;</span>
+    <img id="pr-modal-image" class="pr-modal-content" />
+    <button class="pr-nav-btn pr-prev-btn" onclick="prevImage()">&#8592;</button>
+    <button class="pr-nav-btn pr-next-btn" onclick="nextImage()">&#8594;</button>
+  </div>
+
+
+
+          <!-- <div class="gallery-container">
             <div class="gallery-title"
               style="text-align: center;color: #00397f;">OUR WORKS</div>
             <div class="gallery-grid">
@@ -856,7 +904,7 @@
               <div class="gallery-item"><img src="../static/assets/img/gallery/gallery6.png"
                   alt="3D Design 6"></div>
             </div>
-          </div>
+          </div> -->
         </div>
   
         <!--=====SERVICE AREA END=======-->
